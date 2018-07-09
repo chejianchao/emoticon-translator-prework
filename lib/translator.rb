@@ -6,7 +6,9 @@ def load_library(path)
   emotion = YAML.load_file(path)
   emotion["get_emoticon"] = {}
   emotion["get_meaning"] = {}
-  emotion
+  emotion.each{|meaning, icon|
+    
+  }
 end
 
 def get_japanese_emoticon
