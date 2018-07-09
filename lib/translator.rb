@@ -23,5 +23,9 @@ end
 def get_english_meaning(path, icon)
   # code goes here
   emotion = load_library(path)
-  return emotion["get_meaning"][icon]
+  if emotion["get_meaning"][icon] == nil
+    return "Sorry, that emoticon was not found"
+  else
+    return emotion["get_meaning"][icon]
+  end
 end
