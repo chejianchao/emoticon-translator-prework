@@ -12,12 +12,14 @@ def load_library(path)
   }
 end
 
-def get_japanese_emoticon(path)
+def get_japanese_emoticon(path, icon)
   # code goes here
   emotion = load_library(path)
-  
+  return emotion["get_emoticon"][icon]
 end
 
-def get_english_meaning
+def get_english_meaning(path, icon)
   # code goes here
+  emotion = load_library(path)
+  return emotion["get_meaning"][icon]
 end
