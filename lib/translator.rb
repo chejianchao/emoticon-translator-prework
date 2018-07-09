@@ -11,6 +11,7 @@ def load_library(path)
     emotion["get_meaning"][icons[1]] = meaning
     emotion["get_emoticon"][icons[0]] = icons[1]
   }
+  emotion
 end
 
 def get_japanese_emoticon(path, icon)
