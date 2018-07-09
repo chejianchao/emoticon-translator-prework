@@ -9,6 +9,7 @@ end
 
 def get_japanese_emoticon
   # code goes here
+  emotion = load_library
   
 end
 
