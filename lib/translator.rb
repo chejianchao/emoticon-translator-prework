@@ -3,10 +3,11 @@ require "yaml"
 def load_library(path)
   # code goes here
   
-  emotion = YAML.load_file(path)
+  emotions = YAML.load_file(path)
+  emotion={}
   emotion["get_emoticon"] = {}
   emotion["get_meaning"] = {}
-  emotion.each{|meaning, icons|
+  emotions.each{|meaning, icons|
     emotion["get_meaning"][icons[1]] = meaning
     emotion["get_emoticon"][icons[0]] = icons[1]
   }
